@@ -16,8 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     background: var(--red);
@@ -138,11 +138,6 @@ form {
     margin-right: 1em;
 }
 
-.error__email {
-    display: none;
-    font-style: normal;
-}
-
 form p {
     display: none;
     width: 90%;
@@ -230,9 +225,72 @@ footer {
     text-decoration: none;
 }
 
+/* Media queries */
+
+@media screen and (max-width: 320px){
+    body {
+        font-size: 0.75em;
+    }
+}
+@media screen and (min-width: 320px){
+    body {
+        font-size: 0.80em;
+    }
+}
+@media screen and (min-width: 473px){
+    body {
+        font-size: 0.85em;
+    }
+    .container {
+        width: 80%;
+    }
+    form + p {
+        padding-bottom: 2em;
+    }
+}
+@media screen and (min-width: 573px){
+    body {
+        font-size: 0.9em;
+    }
+    .container {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 673px){
+    body {
+        font-size: 0.95em;
+    }
+    .container {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 773px){
+    body {
+        font-size: 1em;
+    }
+    .container {
+        width: 65%;
+    }
+}
+@media screen and (min-width: 873px){
+    .container {
+        width: 60%;
+    }
+}
+@media screen and (min-width: 973px){
+    .container {
+        width: 55%;
+    }
+}
+@media screen and (min-width: 1073px){
+    .container {
+        width: 55%;
+    }
+}
+
 /* Desktop version */
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1105px) {
 
     .container {
         width: 80%;

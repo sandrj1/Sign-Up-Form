@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" async></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Intro component with sign up form</title>
+</head>
+<body>
+        <div class="container">
+            <header>
+                <h1>
+                    Learn to code by watching others
+                </h1>
+                <p>
+                    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
+                </p>
+            </header>
+            <main>
+                <section>
+                    <h2>
+                        <span>Try it free 7 days</span> then $20/mo. thereafter
+                    </h2>
+                </section>
+                <article>
+                    <form name="form" action="" onsubmit="return validateForm()" novalidate>
+                        <div class="box">
+                            <label for="fname"></label>
+                            <input type="text" name="fname" id="fname" placeholder="First Name">
+                            <div class="box__img"
+                            id="img__fname">
+                                <img class="error error__img" src="images/icon-error.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="error error__message" id="error__fname" >First Name cannot be empty</p>
+                        <div class="box">
+                            <label for="lname"></label>
+                            <input type="text" name="lname" id="lname" placeholder="Last Name">
+                            <div class="box__img">
+                                <img class="error error__img" src="images/icon-error.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="error error__message"
+                        id="error__lname"
+                        >Last Name cannot be empty</p>
+                        <div class="box">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                            <div class="box__img">
+                                <img class="error error__img error__img--email" src="images/icon-error.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="error error__message"
+                        id="error__email"
+                        >Email Address cannot be empty</p>
+                        <p class="error error__email">email@example.com</p>
+                        <div class="box">
+                            <label for="password"></label>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <div class="box__img">
+                                <img class="error error__img" src="images/icon-error.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="error error__message"
+                        id="error__password"
+                        >Password cannot be empty</p>
+                        <div class="box box__submit">
+                            <label for="submit"></label>
+                            <input type="submit" 
+                            name="submit"
+                            id="submit"
+                            value="Claim your free trial ">
+                        </div>
+                    </form>
+                    <p>
+                        By clicking the button, you are agreeing to our <a href="#">
+                        Terms and Services</a>
+                    </p>
+                </article>
+            </main>
+        </div>
+        <footer>
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            </p>
+            <p class="attribution">
+                Coded by <a href="https://github.com/sandrj1" target="_blank">Sandra Bote</a>.
+            </p>
+        </footer>
+</body>
+</html>

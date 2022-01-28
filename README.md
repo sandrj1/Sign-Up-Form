@@ -14,12 +14,12 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://sandrj1.github.io/Sign-Up-Form/](https://sandrj1.github.io/Sign-Up-Form/)
 
 ### Built with
 
 - Semantic HTML5 markup
+- BEM methodology
 - Flexbox
 - Mobile-first workflow
-
-
+- Vanilla JavaScript

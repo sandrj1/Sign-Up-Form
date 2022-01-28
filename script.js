@@ -4,6 +4,17 @@ var email = document.forms["form"]["email"];
 var password = document.forms["form"]["password"];
 const input = [fname, lname, email, password];
 
+for (let j = 0; j < input.length; j++){
+    input[j].addEventListener("click", function () {
+        for (let k = 0; k < input.length; k++){
+            if (input[j] !== input[k]) {
+                let box = input[k].parentNode
+                box.style.outline = "transparent";
+            }
+        }
+    })
+}
+
 function validateForm() {
     let counter = 0;
     let validEmail = false;

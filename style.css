@@ -95,8 +95,10 @@ form {
     border-radius: 5px;
 }
 
-.box:hover {
-    outline: 1px solid var(--blue);
+@media (hover: hover) {
+    .box:hover {
+        outline: 1px solid var(--blue);
+    }
 }
 
 .box input {
@@ -157,8 +159,10 @@ form p {
     border: transparent;
 }
 
-.box__submit:hover {
-    outline: transparent;
+@media (hover: hover) {
+    .box__submit:hover {
+        outline: transparent;
+    }
 }
 
 .box__submit input {
@@ -174,9 +178,11 @@ form p {
     cursor: pointer;
 }
 
-.box__submit input:hover {
-    border: transparent;
-    font-size: 0.91em;
+@media (hover: hover){
+    .box__submit input:hover {
+        border: transparent;
+        font-size: 0.91em;
+    }
 }
 
 .box__submit input:active {
@@ -295,15 +301,13 @@ footer {
     .container {
         width: 80%;
         display: flex;
-        align-items: center;
-        margin: 2em 0; 
-        /* When error -->
-        margin: 0 0 1em;
-        */
+        align-items: stretch;
+        margin: 2em 0;
     }
 
     header {
         width: 50%;
+        margin-top: 10em;
     }
 
     header h1 {
@@ -356,10 +360,12 @@ footer {
 
     /* End Error Message */
 
-    .box__submit input:hover {
-        font-size: 0.86em;
+    @media (hover: hover){
+        .box__submit input:hover {
+            font-size: 0.86em;
+        }
     }
-
+    
     .box__submit input:active {
         font-size: 0.86em;
     }
@@ -371,6 +377,8 @@ footer {
     }
     
     footer {
+        display: flex;
+        align-self: end;
         font-size: 0.7em;
     }
 }

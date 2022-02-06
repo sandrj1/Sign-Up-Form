@@ -27,6 +27,7 @@ body {
 .container {
     width: 85%;
     margin-top: 5em;
+    margin-bottom: 2.5em;
 }
 
 header {
@@ -207,30 +208,6 @@ article p a {
     text-decoration: none;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 60%;
-    margin: 2.5em 0 1.5em;
-    font-size: 0.75em;
-    color: #fff;
-    text-align: center;
-}
-
-.attribution {
-    margin: 0.2em;
-    font-size: 0.85em;
-    line-height: 1.1em;
-}
-
-.attribution a {
-    margin-bottom: 0;
-    font-weight: var(--fw-bold);
-    color: var(--blue);
-    text-decoration: none;
-}
-
 /* Media queries */
 
 @media screen and (max-width: 320px){
@@ -374,11 +351,5 @@ footer {
         width: 70%;
         padding: 0.75em 0 2.25em;
         font-size: 0.6em;
-    }
-    
-    footer {
-        display: flex;
-        align-self: end;
-        font-size: 0.7em;
     }
 }
